@@ -3885,9 +3885,22 @@ input, select, textarea {
 		background-size: 100% 100%;
 	}
 
+	#logo-img-intro {
+		width: 0%;
+	}
+
+
 		#intro p {
 			font-size: 1.25em;
 		}
+
+			@media screen and (max-width: 1280px) {
+
+				#intro {
+					background-attachment: scroll;
+				}
+
+			}
 
 			@media screen and (max-width: 980px) {
 
@@ -3903,12 +3916,9 @@ input, select, textarea {
 					font-size: 1em;
 				}
 
+				#logo-img-intro {
+					width: 50%;
+				}
+
 			}
 
-		@media screen and (max-width: 1280px) {
-
-			#intro {
-				background-attachment: scroll;
-			}
-
-		}
