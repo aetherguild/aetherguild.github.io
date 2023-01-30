@@ -3263,7 +3263,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #ffffff;
 		}
 
 		.wrapper.fullscreen {
@@ -3932,6 +3932,109 @@ input, select, textarea {
 		text-decoration: none !important;
 		border-bottom: none !important;
 	}
+
+/* Slider */
+	#partner {
+		background-color: #efeef2;
+		text-align: center;
+		padding: 0.5em;
+	}
+	.slider {
+		background: #efeef2;
+		height: 100pt;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+		cursor: default;
+		user-select: none;
+		touch-action: none;
+	}
+
+	.slider:before {
+		left: 0;
+		top: 0;
+	}
+
+	.slider:after,
+	.slider:before {
+		background: linear-gradient(to right,
+				#efeef2 0%,
+				hsla(0, 0%, 100%, 0) 100%);
+		content: "";
+		height: 100pt;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+
+	.slider:after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	.slider:after,
+	.slider:before {
+		background: linear-gradient(to right,
+				#efeef2 0%,
+				hsla(0, 0%, 100%, 0) 100%);
+		content: "";
+		height: 100pt;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+
+	.slider .slide-track-1 {
+		animation: scroll-l 30s linear infinite;
+		display: flex;
+		width: 2500px;
+	}
+
+	.slider .slide-track-2 {
+		animation: scroll-r 30s linear infinite;
+		display: flex;
+		width: 2500px;
+	}
+
+	.slider .slide {
+		height: 100pt;
+		width: 250px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	.slider .slide img {
+		width: auto;
+		padding: 1pc;
+		vertical-align: middle;
+		margin: 0 auto;
+		display: inline-block;
+		max-width: 250px;
+		height: 100pt;
+	}
+
+	@keyframes scroll-l {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(calc(-250px * 5));
+		}
+	}
+
+	@keyframes scroll-r {
+		100% {
+			transform: translateX(0);
+		}
+
+		0% {
+			transform: translateX(calc(-250px * 5));
+		}
+	}
+
 /*
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&#BGPP5YYYYYYYYY5PPGB#&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&BG5J?7!!~~~~~~~~~~~~~~~~~~~!!7JYPG#&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
