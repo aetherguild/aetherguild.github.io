@@ -22,7 +22,7 @@ The team behind the first version of this website consisted of:
 
 ### Template
   
-The template of the website is Hyperspace, provided by [HTML5 UP!](HTML5up.net), and uses HTML, CSS and Javascript.
+The template of the website is Hyperspace, provided by [HTML5 UP](HTML5up.net), and uses HTML, CSS and Javascript.
 
 ### Changelog
 
