@@ -31,4 +31,4 @@ The template of the website is Hyperspace, provided by [HTML5 UP!](HTML5up.net),
 | 10.01.2023  | Initial commit, deploy template "Read Only"       | David Vigh   |
 | 26.01.2023  | Change template to "Hyperspace", add changes      | All          |
 | 28.01.2023  | Update interface                                  | Andrew Trieu |
-| 30.01.2023  | Add partnership carousel and favicon              | Andrew Trieu |
+| 30.01.2023  | Add partnership carousel and favicon, fix footer  | Andrew Trieu |
