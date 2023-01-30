@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #000000;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2539,19 +2539,19 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
+					color: #e3af0e;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
+					color: #e3af0e;
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #5052b5;
+					color: #e3af0e;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
-					color: #3e4094;
+					color: #e3af0e;
 				}
 
 				.wrapper.style3 .icon.major:before {
@@ -2559,7 +2559,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #953d75;
+					color: #e3af0e;
 				}
 
 /* Image */
@@ -3937,7 +3937,7 @@ input, select, textarea {
 	#partner {
 		background-color: #efeef2;
 		text-align: center;
-		padding: 0.5em;
+		padding: 0.5em 0 0.1em 0;
 	}
 	.slider {
 		background: #efeef2;
@@ -3963,7 +3963,7 @@ input, select, textarea {
 		content: "";
 		height: 100pt;
 		position: absolute;
-		width: 200px;
+		width: 300px;
 		z-index: 2;
 	}
 
@@ -3981,25 +3981,25 @@ input, select, textarea {
 		content: "";
 		height: 100pt;
 		position: absolute;
-		width: 200px;
+		width: 300px;
 		z-index: 2;
 	}
 
 	.slider .slide-track-1 {
 		animation: scroll-l 30s linear infinite;
 		display: flex;
-		width: 2500px;
+		width: 3000px;
 	}
 
 	.slider .slide-track-2 {
 		animation: scroll-r 30s linear infinite;
 		display: flex;
-		width: 2500px;
+		width: 3000px;
 	}
 
 	.slider .slide {
 		height: 100pt;
-		width: 250px;
+		width: 300px;
 		display: flex;
 		align-items: center;
 		text-align: center;
@@ -4021,7 +4021,7 @@ input, select, textarea {
 		}
 
 		100% {
-			transform: translateX(calc(-250px * 5));
+			transform: translateX(calc(-300px * 5));
 		}
 	}
 
@@ -4031,7 +4031,7 @@ input, select, textarea {
 		}
 
 		0% {
-			transform: translateX(calc(-250px * 5));
+			transform: translateX(calc(-300px * 5));
 		}
 	}
 
