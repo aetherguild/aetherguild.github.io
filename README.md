@@ -1,6 +1,6 @@
 # The official source code of AETHER ry's website
 
-This repository hosts the source code of AETHER ry's website at [aetherguild.fi](aetherguild.fi). Please contact the board of AETHER ry if you have any questions or suggestions.
+This repository hosts the source code of AETHER ry's website at [aetherguild.fi](https://www.aetherguild.fi/). Please contact the board of AETHER ry if you have any questions or suggestions.
 
 ## AETHER ry
 
@@ -22,7 +22,7 @@ The team behind the first version of this website consisted of:
 
 ### Template
   
-The template of the website is Hyperspace, provided by [HTML5 UP](HTML5up.net), and uses HTML, CSS and Javascript.
+The template of the website is Hyperspace, provided by [HTML5 UP](https://www.HTML5up.net), and uses HTML, CSS and Javascript.
 
 ### Changelog
 
@@ -32,3 +32,4 @@ The template of the website is Hyperspace, provided by [HTML5 UP](HTML5up.net), 
 | 26.01.2023  | Change template to "Hyperspace", add changes      | All          |
 | 28.01.2023  | Update interface                                  | Andrew Trieu |
 | 30.01.2023  | Add partnership carousel and favicon, fix footer  | Andrew Trieu |
+| 07.02.2023  | Change color scheme, add content to index.html    | All          |
