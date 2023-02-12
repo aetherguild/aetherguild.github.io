@@ -33,3 +33,4 @@ The template of the website is Hyperspace, provided by [HTML5 UP](https://www.HT
 | 28.01.2023  | Update interface                                  | Andrew Trieu |
 | 30.01.2023  | Add partnership carousel and favicon, fix footer  | Andrew Trieu |
 | 07.02.2023  | Change color scheme, add content to index.html    | All          |
+| 08.02.2023  | Add 2 emails to contact info in index.html        | Andrew Trieu |
