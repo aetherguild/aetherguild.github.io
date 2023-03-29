@@ -3261,6 +3261,10 @@ input, select, textarea {
 			background-color: #afadac;
 		}
 
+		.wrapper.style4 {
+			background-color: #e6e4e3;
+		}
+
 		.wrapper.fullscreen {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -4026,6 +4030,22 @@ input, select, textarea {
 			transform: translateX(calc(-300px * 5));
 		}
 	}
+
+/* Calendar */
+
+/*Scale calendar according to screen size*/
+	#calendar iframe {
+		width: 65vw;
+		height: 50vw;
+	}		
+			@media screen and (max-width: 1280px) {
+				#calendar iframe {
+					width: 90vw;
+					height: 70vw;
+				}
+			}
+			
+		
 
 
 /*
