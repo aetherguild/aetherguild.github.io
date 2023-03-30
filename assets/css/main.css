@@ -4047,8 +4047,32 @@ input, select, textarea {
 			
 		
 
+/* Board and officers */
 
+	.board {
+		background-color: #efeef2;
+		border: #000000;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 10px;
+	}
+	@media (max-width: 550px) {
+
+		/* apply styles when screen width is less than or equal to 767px */
+		.board table {
+			display: block;
+			width: 100%;
+		}
+
+		.board td {
+			display: block;
+			width: 100%;
+		}		
+	}	
+	
 /*
+
+
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&#BGPP5YYYYYYYYY5PPGB#&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&BG5J?7!!~~~~~~~~~~~~~~~~~~~!!7JYPG#&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@&#PY?!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~7?5G#@@@@@@@@@@@@@@@@@@@@@@@@@@@
