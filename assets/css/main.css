@@ -4034,18 +4034,63 @@ input, select, textarea {
 /* Calendar */
 
 /*Scale calendar according to screen size*/
-	#calendar iframe {
-		width: 65vw;
+	#events #calendar {
+		border-radius: 15px;
 		height: 50vw;
 	}		
-			@media screen and (max-width: 1280px) {
-				#calendar iframe {
-					width: 90vw;
-					height: 70vw;
-				}
+		@media screen and (max-width: 1280px) {
+			#events #calendar {
+				height: 70vw;
 			}
+
+		}
 			
-		
+/*Instagram feed */
+	#events #feed {
+		border-radius: 15px;
+		height: 60vw;
+	}
+		@media screen and (max-width: 1440px) {
+			#events #feed {
+				height: 60vw;
+			}
+
+		}
+
+		@media screen and (max-width: 1024px) {
+			#events #feed {
+				height: 78vw;
+			}
+
+		}
+
+		@media screen and (max-width: 768px) {
+			#events #feed {
+				height: 82vw;
+			}
+
+		}
+
+		@media screen and (max-width: 425px) {
+			#events #feed {
+				height: 93vw;
+			}
+
+		}
+
+		@media screen and (max-width: 375px) {
+			#events #feed {
+				height: 97vw;
+			}
+
+		}
+
+		@media screen and (max-width: 320px) {
+			#events #feed {
+				height: 103vw;
+			}
+
+		}
 
 /* Board and officers */
 
