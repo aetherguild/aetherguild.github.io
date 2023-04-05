@@ -1,6 +1,6 @@
 # The official source code of AETHER ry's website
 
-This repository hosts the source code of AETHER ry's website at [aetherguild.fi](https://www.aetherguild.fi/). Please contact the board of AETHER ry if you have any questions or suggestions.
+This repository hosts the source code of AETHER ry's website at [www.aetherguild.fi](https://www.aetherguild.fi/). Please contact the board of AETHER ry if you have any questions or suggestions.
 
 ## AETHER ry
 
@@ -14,23 +14,14 @@ AETHER is registered as a non-profit organizational community run by the student
 
 ### The team
 
-The team behind the first version of this website consisted of:
+The team behind the first version in 2022-2023 of this website consisted of:
 
 - [Andrew Trieu](https://www.linkedin.com/in/nguyen-andrew-trieu/)
 - [David Vigh](https://www.linkedin.com/in/david-vigh-357057207/)
 - [Roosa Pipatti](<https://www.linkedin.com/in/pipattiroosa/>)
 
+The subsequent versions of the website were Aether's website officers: [Andrei Toma](https://www.linkedin.com/in/toma-andrei-stefan-3b2a2a237/) (2023).
+
 ### Template
   
 The template of the website is Hyperspace, provided by [HTML5 UP](https://www.HTML5up.net), and uses HTML, CSS and Javascript.
-
-### Changelog
-
-| Time        | Changes                                           | Author       |
-| ----------- | ------------------------------------------------- | ------------ |
-| 10.01.2023  | Initial commit, deploy template "Read Only"       | David Vigh   |
-| 26.01.2023  | Change template to "Hyperspace", add changes      | All          |
-| 28.01.2023  | Update interface                                  | Andrew Trieu |
-| 30.01.2023  | Add partnership carousel and favicon, fix footer  | Andrew Trieu |
-| 07.02.2023  | Change color scheme, add content to index.html    | All          |
-| 08.02.2023  | Add 2 emails to contact info in index.html        | Andrew Trieu |
