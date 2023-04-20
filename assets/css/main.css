@@ -4128,6 +4128,19 @@ input, select, textarea {
 		}		
 	}	
 	
+
+/* Form */
+
+	#form {
+		border-radius: 15px;
+		height: 60vw;
+		width: 80vw;
+	}
+
+	@media screen and (max-width: 2560px) {
+
+	}
+
 /*
 
 
