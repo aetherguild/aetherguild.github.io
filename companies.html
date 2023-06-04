@@ -6,28 +6,109 @@
 -->
 <html>
 <head>
-	<title>AETHER ry - For companies</title>
+	<title>AETHER ry - About</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		.dropdown {
+			position: relative;
+		  }
+		
+		  .dropdown-menu {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			display: none;
+			z-index: 999;
+			padding: 10px;
+			background-color: #ffffff;
+			border: 1px solid #dddddd;
+			border-radius: 4px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+		  }
+		
+		  .dropdown:hover .dropdown-menu {
+			display: block;
+		  }
+		
+		  /* Position the dropdown menu on top of the header */
+		  .dropdown-menu.top {
+			top: auto;
+			bottom: 100%;
+		  }
+		
+		  /* Style the submenu items */
+		  .dropdown-menu li {
+			padding: 5px 0;
+		  }
+		
+		  .dropdown-menu li a {
+			display: block;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #333;
+		  }
+		
+		  .dropdown-menu li a:hover {
+			background-color: #ddd;
+		  }
+
+		  #header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 5px 15px; /* Adjust the padding as needed */
+		  }
+		
+	  </style>
 </head>
 <body class="is-preload">
 
 	<!-- Header -->
-		<header id="header">
-			<a href="index.html" class="title">AETHER ry</a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="members.html">FOr members</a></li>
-					<li><a href="freshers.html">For freshers</a></li>
-					<li><a href="companies.html" class="active">For companies</a></li>
-				</ul>
-			</nav>
-		</header>
+	<header id="header">
+		<a href="index.html" class="title"><img id="logo-img" src="images/aether_logo.png" alt="AETHER ry" style="width: 120px; margin-top:10px;"></a>
+		<!-- <a href="index.html" class="title">AETHER ry</a> -->
+		<nav>
+		  <ul>
+			<li class="dropdown">
+			  <a href="#" class="active">Aether</a>
+			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:15px;">
+				<li><a href="history.html" style="color: black;">History</a></li>
+				<li><a href="board-and-officers.html" style="color: black;">Board and Officers</a></li>
+				<li><a href="rules-and-policies.html" style="color: black;">Rules and Policies</a></li>
+				<li><a href="billing-information.html" style="color: black;">Billing Info</a></li>
+			  </ul>
+			</li>
+			<li class="dropdown">
+			  <a href="#">For members</a>
+			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:15px;">
+				<li><a href="events.html" style="color: black;">Events</a></li>
+				<li><a href="guild-room.html" style="color: black;">Guild Room</a></li>
+				<li><a href="clubs-and-committees.html" style="color: black;">Clubs and Committees</a></li>
+				<li><a href="student-advocacy.html" style="color: black;">Student Advocacy</a></li>
+			  </ul>
+			</li>
+			<li class="dropdown">
+			  <a href="#">For freshers</a>
+			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:15px;">
+				<li><a href="become-a-member.html" style="color: black;">Become a member</a></li>
+				<li><a href="fresher-captain.html" style="color: black;">Fresher Caprtain and Fresher Guide</a></li>
+				<li><a href="connect-to-aether.html" style="color: black;">Connect to Aether</a></li>
+			  </ul>
+			</li>
+			<li class="dropdown">
+			  <a href="#">For companies</a>
+			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:15px;">
+				<li><a href="companies.html" style="color: black;">Cooperations and Sponsorships</a></li>
+
+			  </ul>
+			</li>
+		  </ul>
+		</nav>
+	  </header>
 
 	<!-- Wrapper -->
 		<div id="wrapper">
@@ -35,7 +116,7 @@
 			<!-- Main -->
 				<section id="main" class="wrapper style2-alt fade-up">
 					<div class="inner">
-						<h1 class="major">For companies</h1>
+						<h1>Cooperations and Sponsorships</h1>
 						<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 						<p>
 							Any questions or propositions should be sent to our Corporate Relations Manager’s email: <a href="mailto: corporate@aetherguild.fi">corporate@aetherguild.fi</a><br><br>
@@ -47,8 +128,8 @@
 							Sponsorships related to Slounge are flexible and can be done via email:  <a href="mailto: corporate@aetherguild.fi">corporate@aetherguild.fi</a><br>
 						</p>
 					</div>
+					</div>
 				</section>
-
 		</div>
 
 	<!-- Footer -->

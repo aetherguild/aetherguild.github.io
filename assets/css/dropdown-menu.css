@@ -1,9 +1,0 @@
-.dropdown-menu {
-    display: none;
-    position: absolute;
-  }
-  
-  li:hover .dropdown-menu {
-    display: block;
-  }
-  
