@@ -12,19 +12,11 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 		<style>
-			.dropdown-menu {
-				max-height: 0;
-				overflow: hidden;
-				transition: max-height 0.8s ease;
-			  }
-			  
-			  li:hover .dropdown-menu {
-				max-height: 500px; /* Adjust the value based on the height of your dropdown content */
-			  }
-			  
-			  
-		  </style>
+			
+		</style>
+		
 	</head>
 	<body class="is-preload">
 
@@ -32,7 +24,7 @@
 		<section id="sidebar" style="overflow: hidden;">
 			<div class="inner">
 				<nav>
-					<ul>
+					<!-- <ul>
 						<li><img id="logo-img" src="images/aether_logo.png" alt="AETHER ry" style="display: block; margin-left: auto; margin-right: auto;"></li>
 						<li class="dropdown">
 							<a href="#">Aether</a>
@@ -68,7 +60,42 @@
 						  </li>
 						
 						<li><a href="#five">Contact</a></li>
-					</ul>
+					</ul> -->
+
+					<ul style="font-size: 32px; ">
+						<li class="dropdown">
+						  <a href="#" class="active">Aether</a>
+						  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none;">
+							<li><a href="history.html" style="color: rgb(255, 255, 255);">History</a></li>
+							<li><a href="board-and-officers.html" style="color: white;">Board and Officers</a></li>
+							<li><a href="rules-and-policies.html" style="color: white;">Rules and Policies</a></li>
+							<li><a href="billing-information.html" style="color: white;">Billing Info</a></li>
+						  </ul>
+						</li>
+						<li class="dropdown">
+						  <a href="#">For members</a>
+						  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none;">
+							<li><a href="events.html" style="color: white;">Events</a></li>
+							<li><a href="guild-room.html" style="color: white;">Guild Room</a></li>
+							<li><a href="clubs-and-committees.html" style="color: white;">Clubs and Committees</a></li>
+							<li><a href="student-advocacy.html" style="color: white;">Student Advocacy</a></li>
+						  </ul>
+						</li>
+						<li class="dropdown">
+						  <a href="#">For freshers</a>
+						  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none;">
+							<li><a href="become-a-member.html" style="color: white;">Become a member</a></li>
+							<li><a href="fresher-captain.html" style="color: white;">Fresher Captain and Fresher Guide</a></li>
+							<li><a href="connect-to-aether.html" style="color: white;">Connect to Aether</a></li>
+						  </ul>
+						</li>
+						<li class="dropdown">
+						  <a href="#">For companies</a>
+						  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none;">
+							<li><a href="companies.html" style="color: white;">Cooperations and Sponsorships</a></li>
+						  </ul>
+						</li>
+					  </ul>
 				</nav>
 			</div>
 		</section>
@@ -207,7 +234,7 @@
 						</div>
 					</section> -->
 				<!-- Contact -->
-					<section id="five" class="wrapper style3-alt fade-up">
+					<!-- <section id="five" class="wrapper style3-alt fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>Contact us if you have any questions or would like to get involved.</p>
@@ -234,7 +261,7 @@
 									</ul>
 								</section>
 						</div>
-					</section>
+					</section> -->
 				<!--Slideshows of logos of sponsors-->
 				<section>
 					<div id="partner">
@@ -299,6 +326,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/drop-down.js"></script>
 
 	</body>
 </html>
