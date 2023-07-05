@@ -1,11 +1,26 @@
 .dropdown {
     position: relative;
+    
   }
 
   .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
+    display: none;
+    z-index: 999;
+    padding: 0px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+  }
+  
+  .aether-dropdown {
+    position: absolute;
+    top: 100%;
+    left: -45%;
     display: none;
     z-index: 999;
     padding: 0px;
@@ -28,10 +43,10 @@
   /* Style the submenu items */
   .dropdown-menu li {
     padding: 5px 0;
-    border-bottom:1px solid #000000;
-    width: 100%;
+    border-bottom: 1px solid #000000;
     position: relative;
   }
+  
 
   .dropdown-menu li a {
     display: block;
@@ -39,6 +54,7 @@
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    
   }
 
   .dropdown-menu li a:hover {
