@@ -1,95 +1,203 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 <head>
-	<title>AETHER ry - About</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="assets/css/drop-down.css">
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <title>AETHER ry - About</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/drop-down.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+    
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .dropdown-content th,
+        .dropdown-content td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .dropdown-content th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dropdown-content tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
 </head>
+
 <body class="is-preload">
 
-	<!-- Header -->
-	<header id="header">
-		<a href="index.html" class="title"><img id="logo-img" src="images/aether_logo.png" alt="AETHER ry" style="width: 120px; margin-top:10px;"></a>
-		<!-- <a href="index.html" class="title">AETHER ry</a> -->
-		<nav>
-		  <ul style="font-size: 32px;">
-			<li class="dropdown">
-			  <a href="#" class="active">Aether</a>
-			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
-				<li><a href="history.html" style="color: black;">History</a></li>
-				<li><a href="board-and-officers.html" style="color: black;">Board and Officers</a></li>
-				<li><a href="rules-and-policies.html" style="color: black;">Rules and Policies</a></li>
-				<li><a href="billing-information.html" style="color: black;">Billing Info</a></li>
-			  </ul>
-			</li>
-			<li class="dropdown">
-			  <a href="#">For members</a>
-			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
-				<li><a href="events.html" style="color: black;">Events</a></li>
-				<li><a href="guild-room.html" style="color: black;">Guild Room</a></li>
-				<li><a href="clubs-and-committees.html" style="color: black;">Clubs and Committees</a></li>
-				<li><a href="student-advocacy.html" style="color: black;">Student Advocacy</a></li>
-			  </ul>
-			</li>
-			<li class="dropdown">
-			  <a href="#">For freshers</a>
-			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
-				<li><a href="become-a-member.html" style="color: black;">Become a member</a></li>
-				<li><a href="fresher-captain.html" style="color: black;">Fresher Caprtain and Fresher Guide</a></li>
-				<li><a href="connect-to-aether.html" style="color: black;">Connect to Aether</a></li>
-			  </ul>
-			</li>
-			<li class="dropdown">
-			  <a href="#">For companies</a>
-			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
-				<li><a href="companies.html" style="color: black;">Cooperations and Sponsorships</a></li>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="title"><img id="logo-img" src="images/aether_logo.png" alt="AETHER ry" style="width: 120px; margin-top:10px;"></a>
+        <!-- <a href="index.html" class="title">AETHER ry</a> -->
+        <nav>
+          <ul style="font-size: 32px;">
+            <li class="dropdown">
+              <a href="#" class="active">Aether</a>
+              <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+                <li><a href="history.html" style="color: black;">History</a></li>
+                <li><a href="board-and-officers.html" style="color: black;">Board and Officers</a></li>
+                <li><a href="rules-and-policies.html" style="color: black;">Rules and Policies</a></li>
+                <li><a href="billing-information.html" style="color: black;">Billing Info</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">For members</a>
+              <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+                <li><a href="events.html" style="color: black;">Events</a></li>
+                <li><a href="guild-room.html" style="color: black;">Guild Room</a></li>
+                <li><a href="clubs-and-committees.html" style="color: black;">Clubs and Committees</a></li>
+                <li><a href="student-advocacy.html" style="color: black;">Student Advocacy</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">For freshers</a>
+              <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+                <li><a href="become-a-member.html" style="color: black;">Become a member</a></li>
+                <li><a href="fresher-captain.html" style="color: black;">Fresher Captain and Fresher Guide</a></li>
+                <li><a href="connect-to-aether.html" style="color: black;">Connect to Aether</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">For companies</a>
+              <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+                <li><a href="companies.html" style="color: black;">Cooperations and Sponsorships</a></li>
 
-			  </ul>
-			</li>
-		  </ul>
-		</nav>
-	  </header>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </header>
 
-	<!-- Wrapper -->
-		<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-			<!-- Main -->
-				<section id="main" class="wrapper style2-alt fade-up">
-					<div class="inner">
-						<h1>Career Link</h1>
-						<p>lorem ipsum</p>
-						<br><br><br><br><br><br><br>
-					</div>
-					</div>
-				</section>
-		</div>
+        <!-- Main -->
+        <section id="main" class="wrapper style2-alt fade-up">
+            <div class="inner">
+                <h1>Lahti Careerlink</h1>
+                <p>
+                    The perfect opportunity for the students and companies of Lahti city to connect with one another.<br>
+                    The LUT Lahti campus comprises of 3 bachelor’s degree programmes and 6 Master’s
+                    degree programmes, all of them being international programmes, with over 700
+                    students. And 3 master's programmes in finnish as well.<br><br>
+                    The Lahti Careerlink is a network and recruitment event for the companies of Lahti to
+                    make their presence known to the students of LUT University and LAB University of
+                    Applied Sciences for hiring purposes, and for the students to showcase their talent to
+                    the companies around them.<br><br>
+                    <strong>What: </strong> A recruitment event that consists of a stand-based fair, along with the opportunity
+                    to give company presentations simultaneously. Mainly for the purpose of connecting
+                    with the students and informing them about the current and upcoming career
+                    opportunities.<br><br>
+                    <b>Where: </b> Main campus lobby of the Mukkula campus, Mukkulankatu 19, 15210 Lahti<br><br>
+                    <b>When: </b> Wednesday, November 8th 2023, 10-16<br><br>
+                    <b>Who is it for?:</b>: Company recruitment services and current working experts in the
+                    companies, career services, unions and alumni associations, and students seeking jobs
+                    in Finland, especially in the Lahti region.<br><br>
+                    <b>Registration opens: </b>August 1st 2023 (1.8.2023) from 8 am.<br><br>
+                    <b>Type of career opportunities needed:</b>Graduate jobs, part-time jobs, Internships,
+                    Thesis-work, Summer Training. Almost all positions are recommended to be in english,
+                    leaning towards recruiting international students.<br><br>
+                    Contact information: <a href="careerlink@aetherguild.fi">careerlink@aetherguild.fi</a><br><br>
+                    <b>LUT Students:</b>
+                    <ul>
+                        <li>Bachelor programmes:
+                            <ul>
+                                <li>Software and systems engineering</li>
+                                <li>Energy Technology</li>
+                                <li>Industrial Engineering and Management</li>
+                            </ul>
+                        </li>
+                        <li>Master’s programmes:
+                            <ul>
+                                <li>Software Product Management and Business</li>
+                                <li>Digital Systems and Service Development</li>
+                                <li>Electric Transportation Systems</li>
+                                <li>Circular Economy</li>
+                                <li>Industrial Design Engineering</li>
+                                <li>Erasmus Mundus Master's Programme Sustainable Biomass and
+                                    Bioproducts Engineering</li>
+                                <li>Tietojohtamisen ja johtajuuden maisteriohjelma (in finnish)</li>
+                                <li>Yrittäjyyden maisteriohjelma (in finnish)</li>
+                                <li>Tuotantotalouden maisteriohjelma TUDI (in finnish)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <br><br><br><br><br><br><br>
+            </div>
+        </section>
+        
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; AETHER ry. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
 
-	<!-- Footer -->
-		<footer id="footer" class="wrapper alt">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; AETHER ry. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
-
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    
 
 </body>
 </html>
