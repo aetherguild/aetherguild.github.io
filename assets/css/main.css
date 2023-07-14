@@ -1811,7 +1811,7 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="submit"],
+	/* input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -1968,7 +1968,7 @@ input, select, textarea {
 				button:hover:active:after,
 				.button:hover:active:after {
 					opacity: 0.1;
-				}
+				} */
 	/*#join {
 		background-color: ;
 	}*/
