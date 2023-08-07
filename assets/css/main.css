@@ -4049,7 +4049,7 @@ input, select, textarea {
 /*Instagram feed */
 	#events #feed {
 		border-radius: 15px;
-		height: 80vh
+		height: 96vh
 	}
 		@media screen and (max-width: 2560px) {
 			#events #feed {
@@ -4066,7 +4066,7 @@ input, select, textarea {
 		}
 		@media screen and (max-width: 1440px) {
 			#events #feed {
-				height: 906px;
+				height: 740px;
 			}
 
 		}
@@ -4105,6 +4105,9 @@ input, select, textarea {
 			}
 
 		}
+	
+		
+		
 
 /* Board and officers */
 
