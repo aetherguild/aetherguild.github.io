@@ -4072,7 +4072,7 @@ input, select, textarea {
 
 @media screen and (max-width: 1440px) {
     #events #feed {
-        height: 740px;
+        height: 1000px;
     }
 }
 
