@@ -4066,7 +4066,7 @@ input, select, textarea {
 		}
 		@media screen and (max-width: 1440px) {
 			#events #feed {
-				height: 1000px;
+				height: 756px;
 			}
 
 		}
