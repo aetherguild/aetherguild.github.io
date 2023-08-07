@@ -4108,13 +4108,13 @@ input, select, textarea {
 
 @media screen and (max-width: 375px) {
     #events #feed {
-        height: 260px;
+        height: 340px;
     }
 }
 
 @media screen and (max-width: 320px) {
     #events #feed {
-        height: 220px;
+        height: 340px;
     }
 }
 		
