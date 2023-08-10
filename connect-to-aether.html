@@ -73,16 +73,17 @@
 						<p>
 							You can approach Aether board members when you see them or through Telegram and social media. We highly suggest you send a message via Telegram since that’s one way to get a guaranteed response.<br>
 						</p>
-						<section id="events" >
-							<div class="inner">	
+						
+						<!-- <section id="events" >
+							<div id="feed" class="inner">	
 								<iframe id="feed" src="https://www.instagram.com/aether_ry/embed" style="width: 100%; border: none;" frameborder="0"
 									scrolling="no" allowtransparency="true"></iframe>
 							</div>
-						</section>
+						</section> -->
 						<p>
 							<br>Other links to our socials:<br>
 							<ul class="icons">
-								<!-- <li><a href="https://www.instagram.com/aether_ry/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+								<li><a href="https://www.instagram.com/aether_ry/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="https://www.facebook.com/aether.ry.lut/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="https://www.linkedin.com/company/80253675/admin/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
@@ -109,6 +110,30 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
+		<script>
+			const feedElement = document.getElementById('feed');
+			
+			function adjustWidgetSize() {
+			  const viewportWidth = window.visualViewport.width;
+			  const viewportHeight = window.visualViewport.height;
+			
+			  // Set maximum height based on full-screen mode
+			  const maxWidgetHeight = viewportHeight * 0.8; // You can adjust this ratio
+			
+			  // Calculate target height based on viewport width
+			  let targetHeight = viewportWidth * 0.73;
+			
+			  // Apply the maximum height constraint
+			  if (targetHeight > maxWidgetHeight) {
+				targetHeight = maxWidgetHeight;
+			  }
+			
+			  feedElement.style.height = `${targetHeight}px`;
+			}
+			
+			window.addEventListener('resize', adjustWidgetSize);
+			adjustWidgetSize(); // Initialize the size
+			
+			</script>
 </body>
 </html>

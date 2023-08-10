@@ -4047,12 +4047,13 @@ input, select, textarea {
 		}
 			
 /*Instagram feed */
-	#events #feed {
-		border-radius: 15px;
-		height: 96vh
-	}
+#events #feed {
+	border-radius: 15px;
+	height: 73vw;
+	/* max-height: 200vh; */
+}
 		
-@media screen and (max-width: 2560px) {
+/* @media screen and (max-width: 2560px) {
     #events #feed {
         height: 1340px;
     }
@@ -4096,19 +4097,19 @@ input, select, textarea {
 
 @media screen and (max-width: 768px) {
     #events #feed {
-        height: 550px;
+        height: 400px;
     }
 }
 
 @media screen and (max-width: 425px) {
     #events #feed {
-        height: 300px;
+        height: 360px;
     }
 }
 
 @media screen and (max-width: 375px) {
     #events #feed {
-        height: 340px;
+        height: 342px;
     }
 }
 
@@ -4117,31 +4118,54 @@ input, select, textarea {
         height: 340px;
     }
 }
-		
+		 */
 		
 
 /* Board and officers */
+.board {
+	background-color: #efeef2;
+	border: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+	gap: 20px;
+	justify-items: center;
+	padding: 20px;
+}
 
+.member {
+	text-align: center;
+}
+
+.member img {
+	width: 100%;
+}
+
+.member h3,
+.member h4,
+.member a {
+	margin: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
 	.board {
-		background-color: #efeef2;
-		border: #000000;
-		border-style: solid;
-		border-width: 1px;
-		border-radius: 10px;
+		grid-template-columns: 1fr;
 	}
-	@media (max-width: 550px) {
+}
 
-		/* apply styles when screen width is less than or equal to 767px */
-		.board table {
-			display: block;
-			width: 100%;
-		}
+/* Media query for larger screens */
+@media (min-width: 1301px) {
+	.board {
+		grid-template-columns: repeat(3, minmax(310px, 1fr));
+	}
+}
 
-		.board td {
-			display: block;
-			width: 100%;
-		}		
-	}	
+
+
+
 	
 
 /* Form */
