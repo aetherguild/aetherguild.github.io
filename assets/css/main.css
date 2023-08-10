@@ -4135,6 +4135,7 @@ input, select, textarea {
 	padding: 20px;
 }
 
+
 .member {
 	text-align: center;
 }
@@ -4153,6 +4154,14 @@ input, select, textarea {
 @media (max-width: 767px) {
 	.board {
 		grid-template-columns: 1fr;
+	}
+	.member img {
+		max-width: 60%; /* Adjust the maximum width as needed */
+	}
+	.member h3,
+	.member h4,
+	.member a {
+		font-size: 10px;
 	}
 }
 
