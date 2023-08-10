@@ -4068,7 +4068,7 @@ input, select, textarea {
     /* Adjust the size of the widget and content for smaller screens */
     .instagram-widget {
       max-width: 90vw;
-	  height: 580px;
+	  height: 450px;
     }
   }
 
