@@ -4068,15 +4068,30 @@ input, select, textarea {
     /* Adjust the size of the widget and content for smaller screens */
     .instagram-widget {
       max-width: 90vw;
+	  height: 600px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    /* Adjust the size of the widget and content for smaller screens */
+    .instagram-widget {
+      max-width: 90vw;
 	  height: 450px;
     }
   }
+  @media (max-width: 600px) {
+    /* Adjust the size of the widget and content for smaller screens */
+    .instagram-widget {
+      max-width: 90vw;
+	  height: 530px;
+    }
+  }	
 
   @media (max-width: 500px) {
     /* Adjust the size of the widget and content for smaller screens */
     .instagram-widget {
       max-width: 90vw;
-	  height: 340px;
+	  height: 410px;
     }
   }	
 
