@@ -4068,11 +4068,17 @@ input, select, textarea {
     /* Adjust the size of the widget and content for smaller screens */
     .instagram-widget {
       max-width: 90vw;
-	  height: 400px;
+	  height: 580px;
     }
   }
 
-		
+  @media (max-width: 500px) {
+    /* Adjust the size of the widget and content for smaller screens */
+    .instagram-widget {
+      max-width: 90vw;
+	  height: 360px;
+    }
+  }	
 
 /* Board and officers */
 .board {
