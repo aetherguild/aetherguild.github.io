@@ -3493,9 +3493,9 @@ input, select, textarea {
         display: block;
     }
 
-    #wrapper {
-        margin-top: 3em; /* Adjust margin to accommodate the small header */
-    }
+    /* #wrapper {
+        margin-top: 3em; 
+    } */
 }
 		
   
