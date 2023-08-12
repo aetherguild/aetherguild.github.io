@@ -3463,49 +3463,41 @@ input, select, textarea {
 						}
 		}
 							
-		
-/* Index Header */
-
-/* Keep your existing header styles */
-
-/* Add a new class for the smaller header */
+/* Index header */
 #small-header {
-	display: none;
-	background-color: #272624;
-	padding: 1em 2em;
-	text-align: left;
-  }
-  
-  #small-header .title {
-	font-size: 1.25em;
-	padding: 1em 0;
-  }
-  
-  #small-header > nav {
-	border-top: solid 1px rgba(255, 255, 255, 0.15);
-	text-align: inherit;
-  }
-  
-  #small-header > nav > ul > li {
-	margin-left: 1.5em;
-  }
-  
-  #small-header > nav > ul > li a {
-	height: 6em;
-	line-height: 6em;
-  }
-  
-  /* Media query for smaller screens */
-  @media screen and (max-width: 480px) {
-	/* Hide the regular header and show the small header */
-	#header {
-	  display: none;
-	}
+    background-color: #272624;
+    color: #ffffff;
+    height: 3em;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    display: none;
+    text-align: center;
+    line-height: 3em;
+    font-size: 1.5em;
+}
+
+#small-header.visible {
+    display: block;
+    animation: fadeIn 0.3s ease forwards;
+}
+
 	
-	#small-header {
-	  display: block;
-	}
-  }
+
+/* Add a media query to show the small header when the sidebar disappears */
+@media screen and (max-width: 1400px) {
+    #small-header {
+        display: block;
+    }
+
+    #wrapper {
+        margin-top: 3em; /* Adjust margin to accommodate the small header */
+    }
+}
+		
   
 
 /* Wrapper (main) */
@@ -3582,11 +3574,44 @@ input, select, textarea {
 		top: 0;
 		width: 18em;
 		z-index: 10000;
+		
 	}
+
+	/* Add slide-in/out animation to the sidebar only when not visible */
+/* @media screen and (max-width: 1400px) {
+    #sidebar {
+        left: -18em; 
+    }
+
+    #sidebar.visible {
+        animation: slideIn 0.3s ease forwards;
+    }
+
+    #sidebar:not(.visible) {
+        animation: slideOut 0.3s ease forwards;
+    }
+
+    @keyframes slideIn {
+        to {
+            left: 0;
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            left: 0;
+        }
+        to {
+            left: -18em;
+        }
+    }
+} */
+
 
 	/* Show the sidebar when the "visible" class is applied */
 #sidebar.visible {
 	display: block;
+	
   }
   
 
@@ -3864,78 +3889,7 @@ input, select, textarea {
 			} */
 		  }
 
-		/* @media screen and (max-width: 1280px) {
-
-			#sidebar {
-				height: 3.5em;
-				left: 0;
-				line-height: 3.5em;
-				overflow: hidden;
-				padding: 0;
-				text-align: center;
-				top: 0;
-				width: 100%;
-			}
-				#logo-img {
-					width : 0px;
-				}
-
-				#sidebar > .inner {
-					-moz-flex-direction: row;
-					-webkit-flex-direction: row;
-					-ms-flex-direction: row;
-					flex-direction: row;
-					-moz-align-items: -moz-stretch;
-					-webkit-align-items: -webkit-stretch;
-					-ms-align-items: -ms-stretch;
-					align-items: stretch;
-					height: inherit;
-					line-height: inherit;
-				}
-
-				#sidebar nav {
-					height: inherit;
-					line-height: inherit;
-				}
-
-					#sidebar nav ul {
-						display: -moz-flex;
-						display: -webkit-flex;
-						display: -ms-flex;
-						display: flex;
-						height: inherit;
-						line-height: inherit;
-						margin: 0;
-					}
-
-						#sidebar nav ul li {
-							display: block;
-							height: inherit;
-							line-height: inherit;
-							margin: 0 0 0 2em;
-							padding: 0;
-						}
-
-					#sidebar nav a {
-						height: inherit;
-						line-height: inherit;
-						padding: 0;
-					}
-
-						#sidebar nav a:after {
-							background-image: none;
-							background-color: #fcc200;
-						}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#sidebar {
-				display: none;
-			}
-
-		} */
+		
 
 /* Intro */
 

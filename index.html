@@ -29,8 +29,8 @@
 			/* Style for the toggle button */
 			.toggle-button {
 				position: fixed;
-				top: 1em;
-				left: 1em;
+				top: 0.7em;
+				left: 0.4em;
 				z-index: 10001; /* Ensure the button is above the sidebar */
 				font-size: 24px;
 				cursor: pointer;
@@ -54,6 +54,9 @@
 		
 	</head>
 	<body class="is-preload">
+		<header id="small-header">
+			<h2 style="color: #ffffff; margin-top: 10px;">Aether</h2>
+		</header>
 		<div class="scroll-container">
 			<div class="content">
 
@@ -241,14 +244,16 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/drop-down.js"></script>
 			<script>
-				document.addEventListener("DOMContentLoaded", function () {
-				const sidebar = document.getElementById("sidebar");
-				const sidebarToggle = document.getElementById("sidebar-toggle");
+			document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar");
+    const smallHeader = document.getElementById("small-header");
+    const sidebarToggle = document.getElementById("sidebar-toggle");
 
-				sidebarToggle.addEventListener("click", function () {
-					sidebar.classList.toggle("visible");
-			});
-		});
+    sidebarToggle.addEventListener("click", function () {
+        sidebar.classList.toggle("visible");
+        smallHeader.classList.toggle("visible");
+    });
+});
 
 		</script>
 			  
