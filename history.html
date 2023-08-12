@@ -58,7 +58,26 @@
 			}
 			}
 		  
-	
+			@media screen and (max-width: 1400px) {
+        .specific-sidebar {
+            /* Adjust the sidebar size for small screens */
+            width: 10%; /* Change this value as needed */
+            /* Add other styling properties as needed */
+        }
+    }
+
+	.aether-sidebar-dropdown {
+    position: absolute;
+    top: 100%;
+    left: -45%;
+    display: none;
+    z-index: 999;
+    padding: 0px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
 		
 	</style>
 </head>
@@ -69,9 +88,9 @@
 			<a href="index.html" class="title"><img id="logo-img" src="images/aether_logo.png" alt="AETHER ry" style="width: 120px; margin-top:10px;"></a>
 			<nav>
 			  <ul style="font-size: 32px;">
-				<li class="dropdown">
+				<li class="header-dropdown">
 				  <a href="#" class="active">Aether</a>
-				  <ul class="dropdown-menu aether-dropdown" style="list-style-type: none; text-align:center; font-size:20px;">
+				  <ul class="header-dropdown-menu aether-dropdown" style="list-style-type: none; text-align:center; font-size:20px;">
 					<li><a href="history.html" style="color: black;">History</a></li>
 					<li><a href="board-and-officers.html" style="color: black;">Board and Officers</a></li>
 					<li><a href="hcp.html" style="color: black;">Herassment Contact Person</a></li>
@@ -79,9 +98,9 @@
 					<li><a href="billing-information.html" style="color: black;">Billing Info</a></li>
 				  </ul>
 				</li>
-				<li class="dropdown">
+				<li class="header-dropdown">
 				  <a href="#">For members</a>
-				  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+				  <ul class="header-dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
 					<li><a href="events.html" style="color: black;">Events</a></li>
 					<li><a href="guild-room.html" style="color: black;">Guild Room</a></li>
 					<li><a href="clubs-and-committees.html" style="color: black;">Clubs and Committees</a></li>
@@ -89,17 +108,17 @@
 					<li><a href="career-services.html" style="color: black;">Career Services</a></li>
 				  </ul>
 				</li>
-				<li class="dropdown">
+				<li class="header-dropdown">
 				  <a href="#">For freshers</a>
-				  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+				  <ul class="header-dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
 					<li><a href="become-a-member.html" style="color: black;">Become a member</a></li>
 					<li><a href="fresher-captain.html" style="color: black;">Fresher Caprtain and Fresher Guide</a></li>
 					<li><a href="connect-to-aether.html" style="color: black;">Connect to Aether</a></li>
 				  </ul>
 				</li>
-				<li class="dropdown">
+				<li class="header-dropdown">
 				  <a href="#">For companies</a>
-				  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+				  <ul class="header-dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
 					<li><a href="companies.html" style="color: black;">Cooperations and Sponsorships</a></li>
 					<li><a href="career-link.html" style="color: black;">Lahti Careerlink</a></li>
 				  </ul>
@@ -208,33 +227,8 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<!-- JavaScript to toggle the sidebar -->
-
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-    const sidebar = document.getElementById("sidebar");
-    const smallHeader = document.getElementById("small-header");
-    const sidebarToggle = document.getElementById("sidebar-toggle");
-
-    sidebarToggle.addEventListener("click", function () {
-        sidebar.classList.toggle("visible");
-        
-        // Toggle the small header only when the screen size is below 1400px
-        if (window.innerWidth <= 1400) {
-            smallHeader.classList.toggle("visible");
-        }
-    });
-
-    // Show or hide the small header based on initial screen size
-    if (window.innerWidth <= 1400) {
-        smallHeader.classList.add("visible");
-    } else {
-        smallHeader.classList.remove("visible");
-    }
-});
-
-
-		</script>
+		<script src="assets/js/sidemenu-dropdown.js"></script>
+		<script src="assets/js/side-menu.js"></script>
 
 
 

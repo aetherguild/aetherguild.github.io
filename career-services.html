@@ -14,18 +14,84 @@
 	<link rel="stylesheet" href="assets/css/drop-down.css">
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<link rel="stylesheet" href="assets/css/font.css">
+
+	<style>
+		
+		@media screen and (max-width: 1400px) {
+					#header {
+						display: none;
+					}
+		
+					#small-header {
+						display: block;
+					}
+		
+					#wrapper {
+						margin-top: 3em;
+					}
+				}
+		
+				/* Style for the toggle button */
+				.toggle-button {
+					position: fixed;
+					top: 1.5em;
+					left: 0.4em;
+					z-index: 10001; /* Ensure the button is above the sidebar */
+					font-size: 24px;
+					cursor: pointer;
+					background: transparent;
+					border: none;
+				}
+		
+				
+				@media screen and (min-width: 1400px) {
+					
+					.toggle-button{
+						display: none;
+					}
+				  }
+		
+		
+				  @media screen and (min-width: 1400px) {
+					
+					.specific-sidebar {
+						display: none;	
+					}
+					}
+				  
+					@media screen and (max-width: 1400px) {
+				.specific-sidebar {
+					/* Adjust the sidebar size for small screens */
+					width: 10%; /* Change this value as needed */
+					/* Add other styling properties as needed */
+				}
+			}
+		
+			.aether-sidebar-dropdown {
+			position: absolute;
+			top: 100%;
+			left: -45%;
+			display: none;
+			z-index: 999;
+			padding: 0px;
+			background-color: #ffffff;
+			border: 1px solid #000000;
+			border-radius: 4px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+		}
+				
+			</style>
 </head>
 <body class="is-preload">
 
 	<!-- Header -->
 	<header id="header">
 		<a href="index.html" class="title"><img id="logo-img" src="images/aether_logo.png" alt="AETHER ry" style="width: 120px; margin-top:10px;"></a>
-		<!-- <a href="index.html" class="title">AETHER ry</a> -->
 		<nav>
 		  <ul style="font-size: 32px;">
-			<li class="dropdown">
+			<li class="header-dropdown">
 			  <a href="#" class="active">Aether</a>
-			  <ul class="dropdown-menu aether-dropdown" style="list-style-type: none; text-align:center; font-size:20px;">
+			  <ul class="header-dropdown-menu aether-dropdown" style="list-style-type: none; text-align:center; font-size:20px;">
 				<li><a href="history.html" style="color: black;">History</a></li>
 				<li><a href="board-and-officers.html" style="color: black;">Board and Officers</a></li>
 				<li><a href="hcp.html" style="color: black;">Herassment Contact Person</a></li>
@@ -33,9 +99,9 @@
 				<li><a href="billing-information.html" style="color: black;">Billing Info</a></li>
 			  </ul>
 			</li>
-			<li class="dropdown">
+			<li class="header-dropdown">
 			  <a href="#">For members</a>
-			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+			  <ul class="header-dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
 				<li><a href="events.html" style="color: black;">Events</a></li>
 				<li><a href="guild-room.html" style="color: black;">Guild Room</a></li>
 				<li><a href="clubs-and-committees.html" style="color: black;">Clubs and Committees</a></li>
@@ -43,17 +109,17 @@
 				<li><a href="career-services.html" style="color: black;">Career Services</a></li>
 			  </ul>
 			</li>
-			<li class="dropdown">
+			<li class="header-dropdown">
 			  <a href="#">For freshers</a>
-			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+			  <ul class="header-dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
 				<li><a href="become-a-member.html" style="color: black;">Become a member</a></li>
 				<li><a href="fresher-captain.html" style="color: black;">Fresher Caprtain and Fresher Guide</a></li>
 				<li><a href="connect-to-aether.html" style="color: black;">Connect to Aether</a></li>
 			  </ul>
 			</li>
-			<li class="dropdown">
+			<li class="header-dropdown">
 			  <a href="#">For companies</a>
-			  <ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
+			  <ul class="header-dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
 				<li><a href="companies.html" style="color: black;">Cooperations and Sponsorships</a></li>
 				<li><a href="career-link.html" style="color: black;">Lahti Careerlink</a></li>
 			  </ul>
@@ -61,9 +127,68 @@
 		  </ul>
 		</nav>
 	  </header>
+<!-- Small header -->
+	  <header id="small-header">
+		
+		<h2 style="color: #ffffff; margin-top: 10px;">Aether</h2>
+	</header>
 
 	<!-- Wrapper -->
 		<div id="wrapper">
+
+			<button id="sidebar-toggle" class="toggle-button">&#9776;</button>
+		
+			<!--Sidebar  -->
+					<section id="sidebar" class="specific-sidebar">
+						<div class="inner">
+							<div class="scroll-container">
+								<div class="content">
+									<div id="side-menu">
+							<nav>
+								<ul style="font-size: 32px; ">
+									<img id="logo-img-intro" src="images/aether_logo.png" alt="AETHER ry" style="display: block; margin-left: auto; margin-right: auto; width:200px">
+									<li class="dropdown">
+										<a href="#" class="active">Aether</a>
+										<ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none;">
+											<li><a href="history.html" style="color: rgb(255, 255, 255);  left: -14px;">History</a></li>
+											<li><a href="board-and-officers.html" style="color: white; left: -14px;">Board and Officers</a></li>
+											<li><a href="hcp.html" style="color: white; left: -14px;">Herassment Contact Person</a></li>
+											<li><a href="rules-and-policies.html" style="color: white; left: -14px;">Rules and Policies</a></li>
+											<li><a href="billing-information.html" style="color: white; left: -14px;">Billing Info</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">For members</a>
+										<ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none; left: -20px;">
+											<li><a href="events.html" style="color: white; left: -14px;">Events</a></li>
+											<li><a href="guild-room.html" style="color: white; left: -14px;">Guild Room</a></li>
+											<li><a href="clubs-and-committees.html" style="color: white; left: -14px;">Clubs and Committees</a></li>
+											<li><a href="student-advocacy.html" style="color: white; left: -14px;">Student Advocacy</a></li>
+											<li><a href="career-services.html" style="color: white; left: -14px;">Career Services</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">For freshers</a>
+										<ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none; left: -20px;">
+											<li><a href="become-a-member.html" style="color: white; left: -14px;">Become a member</a></li>
+											<li><a href="fresher-captain.html" style="color: white; left: -14px;">Fresher Captain and Fresher Guide</a></li>
+											<li><a href="connect-to-aether.html" style="color: white; left: -14px;">Connect to Aether</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">For companies</a>
+										<ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none; left: -20px;">
+											<li><a href="companies.html" style="color: white; left: -14px;">Cooperations and Sponsorships</a></li>
+											<li><a href="career-link.html" style="color: white; left: -14px;">Lahti Careerlink</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						</div>
+						</div>
+					</div>
+					</section>
 
 			<!-- Main -->
 				<section id="main" class="wrapper style2-alt fade-up">
@@ -113,6 +238,8 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/side-menu.js"></script>
+		<script src="assets/js/drop-down.js"></script>
 
 </body>
 </html>
