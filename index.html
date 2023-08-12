@@ -28,17 +28,23 @@
 
 			/* Style for the toggle button */
 			.toggle-button {
-  position: fixed;
-  top: 1em;
-  left: 1em;
-  z-index: 10001; /* Ensure the button is above the sidebar */
-  font-size: 24px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-}
+				position: fixed;
+				top: 1em;
+				left: 1em;
+				z-index: 10001; /* Ensure the button is above the sidebar */
+				font-size: 24px;
+				cursor: pointer;
+				background: transparent;
+				border: none;
+				}
 
-
+@media screen and (max-width: 1400px) {
+			
+			/* Remove custom content margin on smaller screens */
+			.custom-content-margin {
+			  margin-left: 0;
+			}
+		  }
 
 
 
@@ -236,17 +242,15 @@
 			<script src="assets/js/drop-down.js"></script>
 			<script>
 				document.addEventListener("DOMContentLoaded", function () {
-  const sidebar = document.getElementById("sidebar");
-  const sidebarToggle = document.getElementById("sidebar-toggle");
+				const sidebar = document.getElementById("sidebar");
+				const sidebarToggle = document.getElementById("sidebar-toggle");
 
-  sidebarToggle.addEventListener("click", function () {
-    sidebar.classList.toggle("visible");
-  });
-});
+				sidebarToggle.addEventListener("click", function () {
+					sidebar.classList.toggle("visible");
+			});
+		});
 
-
-
-			</script>
+		</script>
 			  
 			
 		</div>

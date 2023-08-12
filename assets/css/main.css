@@ -3584,9 +3584,11 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
-	#sidebar.visible {
-		display: block;
-	  }
+	/* Show the sidebar when the "visible" class is applied */
+#sidebar.visible {
+	display: block;
+  }
+  
 
 		#logo-img {
 			width: 80%;
@@ -3857,9 +3859,9 @@ input, select, textarea {
 			}
 		  
 			/* Remove custom content margin on smaller screens */
-			.custom-content-margin {
+			/* .custom-content-margin {
 			  margin-left: 0;
-			}
+			} */
 		  }
 
 		/* @media screen and (max-width: 1280px) {
