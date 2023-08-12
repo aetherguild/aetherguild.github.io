@@ -3478,6 +3478,7 @@ input, select, textarea {
     text-align: center;
     line-height: 3em;
     font-size: 1.5em;
+	align-items: center;
 }
 
 #small-header.visible {
@@ -3485,7 +3486,7 @@ input, select, textarea {
     animation: fadeIn 0.3s ease forwards;
 }
 
-	
+
 
 /* Add a media query to show the small header when the sidebar disappears */
 @media screen and (max-width: 1400px) {
