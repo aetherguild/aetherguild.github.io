@@ -78,11 +78,37 @@
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-		
+
+
+/* General Scrollbar styling */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Remove the border from the scrollbar track */
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .05);
+    border: none; /* Remove the border */
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+/* Remove the border from the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgb(54, 49, 49);
+}
+
+
+
+
+
 	</style>
 </head>
 <body class="is-preload">
-
+	<div class="custom-scrollbar">
+	
 		<!-- Header -->
 		<header id="header">
 			<a href="index.html" class="title"><img id="logo-img" src="images/aether_logo.png" alt="AETHER ry" style="width: 120px; margin-top:10px;"></a>
@@ -242,9 +268,9 @@
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/sidemenu-dropdown.js"></script>
 		<script src="assets/js/side-menu.js"></script>
+	
 
 
-
-
+</div>
 </body>
 </html>
