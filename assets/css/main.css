@@ -3130,7 +3130,7 @@ input, select, textarea {
 
 /* Table */
 
-	.table-wrapper {
+	/* .table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
 	}
@@ -3194,6 +3194,34 @@ input, select, textarea {
 
 			table.alt tfoot {
 				border-top: 0;
+			} */
+
+			.custom-table {
+				width: 100%;
+				border-collapse: collapse; /* Collapse borders to eliminate spacing */
+				margin-top: 20px;
+			}
+			
+			/* Custom styles for table header */
+			.custom-table th {
+				background-color: rgba(234, 87, 83, 0.7);
+				color: #fff;
+				padding: 1rem;
+				text-align: center;
+				border: 1px solid #000; /* Thin black border */
+			}
+			
+			/* Custom styles for table rows */
+			.custom-table td {
+				background-color: linear-gradient(
+					to right bottom,
+					#ffb88e,
+					#ea5753
+				);
+				color: #000000;
+				padding: 1rem;
+				text-align: center;
+				border: 1px solid #000; /* Thin black border */
 			}
 
 /* Wrapper */
