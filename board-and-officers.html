@@ -14,84 +14,16 @@
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<link rel="stylesheet" href="assets/css/drop-down.css">
 	<link rel="stylesheet" href="assets/css/font.css">
-	
+	<link rel="stylesheet" href="assets/css/custom-sidebar.css">
+
 	<style>
 		img {
 			border-radius: 3%;
 		}
-
-		@media screen and (max-width: 1400px) {
-            #header {
-                display: none;
-            }
-
-            #small-header {
-                display: block;
-            }
-
-            #wrapper {
-                margin-top: 3em;
-            }
-        }
-
-        /* Style for the toggle button */
-        .toggle-button {
-            position: fixed;
-            top: 1.5em;
-            left: 0.4em;
-            z-index: 10001; /* Ensure the button is above the sidebar */
-            font-size: 24px;
-            cursor: pointer;
-            background: transparent;
-            border: none;
-			color: #ffffff;
-        }
-
-        
-		@media screen and (min-width: 1400px) {
-			
-			.toggle-button{
-				display: none;
-			}
-		  }
-
-
-		  @media screen and (min-width: 1400px) {
-			
-			.specific-sidebar {
-				display: none;	
-			}
-			}
-		  
-			@media screen and (max-width: 1400px) {
-        .specific-sidebar {
-            /* Adjust the sidebar size for small screens */
-            width: 10%; /* Change this value as needed */
-            /* Add other styling properties as needed */
-        }
-    }
-
-	.aether-sidebar-dropdown {
-    position: absolute;
-    top: 100%;
-    left: -45%;
-    display: none;
-    z-index: 999;
-    padding: 0px;
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
-
-
-		
 	</style>
 </head>
+
 <body class="is-preload">
-
-
 		<!-- Header -->
 	<header id="header">
 		<a href="index.html" class="title"><img id="logo-img" src="images/aether_logo.png" alt="AETHER ry" style="width: 120px; margin-top:10px;"></a>
@@ -120,7 +52,6 @@
 			<li class="header-dropdown">
 			  <a href="#">For freshers</a>
 			  <ul class="header-dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px;">
-				<!-- <li><a href="become-a-member.html" style="color: black;">Become a member</a></li> -->
 				<li><a href="fresher-captain.html" style="color: black;">Fresher Caprtain and Fresher Guide</a></li>
 				<li><a href="connect-to-aether.html" style="color: black;">Connect to Aether</a></li>
 			  </ul>
@@ -178,7 +109,6 @@
 						<li class="dropdown">
 							<a href="#">For freshers</a>
 							<ul class="dropdown-menu" style="list-style-type: none; text-align:center; font-size:20px; display: none; left: -20px;">
-								<!-- <li><a href="become-a-member.html" style="color: white; left: -14px;">Become a member</a></li> -->
 								<li><a href="fresher-captain.html" style="color: white; left: -14px;">Fresher Captain and Fresher Guide</a></li>
 								<li><a href="connect-to-aether.html" style="color: white; left: -14px;">Connect to Aether</a></li>
 							</ul>
@@ -204,89 +134,7 @@
 						
 						<!-- Photos and names of board members 4x3 grid-->
 						<h2 style="text-align: center;">Board of 2023</h2><br>
-						<!-- <div class="board">
-							<table style="width: 100%;">
-								<tr>
-									<td style="width: 50%;">
-										
-										<img src="images/Board photos/new sizes/compressed/Chair.jpg" style="width: 310px;"/>
-											<h3 style="font-weight: normal;">Chair,</h3>
-											<h3 style="font-weight: normal;">Harassment Contact Person</h3>
-											<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/avaneepk/">Avaneep Kamal</a></h4>
-											<a href="mailto: chair@aetherguild.fi" >chair@aetherguild.fi</a>
-										
-									</td>
-									<td style="width: 50%;">
-										<img src="images/Board photos/new sizes/compressed/Vice Chair.jpg" style="width: 310px;" />
-											<h3 style="font-weight: normal;">Vice-chair,</h3>
-											<br>
-											<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/delia-fliscu/">Delia Fliscu</a></h4>
-											<a href="mailto: vice-chair@aetherguild.fi">vice-chair@aetherguild.fi</a>
-									</td>
-									<td style="width: 50%;">
-										<img src="images/Board photos/new sizes/compressed/Academic Incharge.jpg" style="width: 310px;"/>
-											<h3 style="font-weight: normal;">Academic Affairs,</h3>
-											<h3 style="font-weight: normal;">Tek Representative</h3>
-											<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/nguyen-andrew-trieu/">Andrew Trieu</a></h4>
-											<a href="mailto: academic@aetherguild.fi" >academic@aetherguild.fi</a>
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 50%;">
-										<img src="images/Board photos/new sizes/compressed/Treasurer.jpg" style="width: 310px;" />
-											<h3 style="font-weight: normal;">Treasurer,</h3>
-											<h3 style="font-weight: normal;">Membership Registrar</h3>
-											<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/david-vigh-357057207/">David Vigh</a></h4>
-											<a href="mailto: finance@aetherguild.fi" >finance@aetherguild.fi</a>
-									</td>
-									<td style="width: 50%;">
-										<img src="images/Board photos/new sizes/compressed/Corporate Relations.jpg" style="width: 310px;" />
-											<h3 style="font-weight: normal;">Corporate Relations,</h3>
-											<h3 style="font-weight: normal;">Alumni Relations</h3>
-											<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/eduard-ailincai-95a526251/">Eduard Ailincai</a></h4>
-											<a href="mailto: corporate@aetherguild.fi">corporate@aetherguild.fi</a>
-									</td>
-									<td style="width: 50%;">
-										<img src="images/Board photos/new sizes/compressed/Marketing Manager.jpg" style="width: 310px; "/>
-										<h3 style="font-weight: normal;">Marketing Manager,</h3>
-										<h3 style="font-weight: normal;">LPR/LAHO Representative</h3>
-										<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/pipattiroosa/">Roosa Pipatti</a></h4>
-										<a href="mailto: marketing@aetherguild.fi" >marketing@aetherguild.fi</a>
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 50%;">
-										<img src="images/Board photos/new sizes/compressed/Fresher Captain.jpg" style="width: 310px;" />
-											<h3 style="font-weight: normal;">Fresher Captain</h3>
-											<h4><a href="https://www.linkedin.com/in/samut-jokela-031954142/">Samut Jokela</a></h4>
-											<a href="mailto: freshercaptain@aetherguild.fi" style="font-style: italic;">freshercaptain@aetherguild.fi</a>
-									</td>
-									<td style="width: 50%;">
-										<img src="images/Board photos/new sizes/compressed/Host.jpg" style="width: 310px;" />
-										<h3 style="font-weight: normal;">Host,</h3>
-										<h3 style="font-weight: normal;">Health and Well-Being Incharge</h3>
-										<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/vera-andersson/">Vera Andersson</a></h4>
-										<a href="mailto: excursions@aetherguild.fi">excursions@aetherguild.fi</a>
-									</td>
-									<td style="width: 50%;">
-											<img src="images/Board photos/new sizes/compressed/Project Manager.jpg" style="width: 310px;" />
-											<h3 style="font-weight: normal;">Project Manager,</h3>
-											<h3 style="font-weight: normal; ">LPR/LAHO Representative</h3>
-											<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/eerika-n%C3%A4rhi-b520a4257/">Eerika Närhi</a></h4>
-											<a href="mailto: events@aetherguild.fi">events@aetherguild.fi</a>
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 50;">
-									<img src="images/Board photos/new sizes/compressed/Secretary.jpg" style="width: 310px;"/>
-										<h3 style="font-weight: normal;">Secretary,</h3>
-										<h3 style="font-weight: normal;">Communications Manager</h3>
-										<h4 style="font-style: italic;"><a href="https://www.linkedin.com/in/arlis-arto-puidet-36aba7257/">Arlis Puidet</a></h4>
-										<a href="mailto: board@aetherguild.fi" >board@aetherguild.fi</a>
-									</td>
-								</tr>
-							</table>
-						</div><br/> -->
+						
 						<div class="board">
 							<div class="member">
 						<img src="images/Board photos/new sizes/compressed/Chair.jpg" style="width: 310px;"/>
