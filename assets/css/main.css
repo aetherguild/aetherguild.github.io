@@ -2481,10 +2481,18 @@ input, select, textarea {
 
 /* Icon */
 
+	
+
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		color: white;
+		
+	}
+
+	.icons a.icon {
+		font-size: 34px;
 	}
 
 		.icon:before {
@@ -3275,28 +3283,28 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #f4f4f6;;
-			/* background-color: #F4F4F6; */
+			/* background-color: #f4f4f6;; */
+			background-color: #F4F4F6;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #dcd4d0;
-			/* background-color: #F4F4F6; */
+			/* background-color: #dcd4d0; */
+			background-color: #F4F4F6;
 		}
 
 		.wrapper.style3 {
-			background-color: #dcd4d0;
-			/* background-color: #F4F4F6; */
+			/* background-color: #dcd4d0; */
+			background-color: #F4F4F6;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #afadac;
-			/* background-color: #F4F4F6; */
+			/* background-color: #afadac; */
+			background-color: #F4F4F6;
 		}
 
 		.wrapper.style4 {
-			background-color: #e6e4e3;
-			/* background-color: #F4F4F6; */
+			/* background-color: #e6e4e3; */
+			background-color: #F4F4F6;
 		}
 
 		.wrapper.fullscreen {
@@ -3591,6 +3599,13 @@ input, select, textarea {
 
 	#header + #wrapper + #footer > .inner {
 		margin: 0 auto;
+	}
+
+	.footer-content {
+		 display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust minmax values as needed */
+    grid-gap: 20px; /* Adjust the spacing between items */
+		
 	}
 
 /* Sidebar */
